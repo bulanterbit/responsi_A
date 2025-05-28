@@ -4,7 +4,7 @@ import '../models/movies.dart';
 
 class ApiService {
   final String _baseUrl =
-      "https://tpm-api-responsi-a-h-872136705893.us-central1.run.app/api/v1/";
+      "https://tpm-api-responsi-a-h-872136705893.us-central1.run.app/api/v1";
 
   Future<List<Movies>> getAllMovies() async {
     final response = await http.get(Uri.parse('$_baseUrl/movies'));
